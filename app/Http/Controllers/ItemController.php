@@ -36,7 +36,7 @@ class ItemController extends Controller
         }
 
         return response()->json([
-            "message" => "Item dengan ID $id tidak ditemukan"
+            "message" => "Item dengan ID $id tidak Ditemukan"
         ], 404);
     }
 
@@ -101,7 +101,7 @@ class ItemController extends Controller
         $index = array_search($id, array_column($data, 'id'));
 
         if ($index === false) {
-            return response()->json(["message" => "Item dengan ID $id tidak ditemukan"], 404);
+            return response()->json(["message" => "Item dengan ID $id tidak Ditemukan"], 404);
         }
 
         $data[$index]['nama'] = $request->nama;
@@ -138,7 +138,7 @@ class ItemController extends Controller
         $index = array_search($id, array_column($data, 'id'));
 
         if ($index === false) {
-            return response()->json(["message" => "Item dengan ID $id tidak ditemukan"], 404);
+            return response()->json(["message" => "Item dengan ID $id tidak Ditemukan"], 404);
         }
 
         if ($request->has('nama')) {
@@ -166,7 +166,7 @@ class ItemController extends Controller
         $index = array_search($id, array_column($data, 'id'));
 
         if ($index === false) {
-            return response()->json(["message" => "Item dengan ID $id tidak ditemukan"], 404);
+            return response()->json(["message" => "Item dengan ID $id tidak Ditemukan"], 404);
         }
 
         array_splice($data, $index, 1);
