@@ -74,5 +74,5 @@ Melakukan eksekusi Endpoint kini super praktis karena tidak membutuhkan ekstensi
 
 ---
 <div align="center">
-  <i>Dibuat dengan ❤️ Untuk Pemenuhan UTP - Angga Prima R (245150300111013)</i>
+  <i>Minggu enak nya tidur - Angga Prima R (245150300111013)</i>
 </div>
