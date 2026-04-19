@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🛒 Item Backend API (UTP)
+# Item Backend API (UTP)
 Sebuah *Restful API (Backend)* sederhana bergaya e-commerce yang mengadopsi operasi **CRUD (Create, Read, Update, Delete)** menyeluruh menggunakan data persisten lokal berformat JSON (Non-Database). Proyek ini dibangun sebagai pemenuhan spesifikasi **Ujian Tengah Praktikum (UTP)**.
 
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
@@ -74,5 +74,5 @@ Melakukan eksekusi Endpoint kini super praktis karena tidak membutuhkan ekstensi
 
 ---
 <div align="center">
-  <i>Dibuat dengan ❤️ Untuk Pemenuhan UTP - Angga Prima R (245150300111013)</i>
+  <i>Minggu enak nya tidur - Angga Prima R (245150300111013)</i>
 </div>
