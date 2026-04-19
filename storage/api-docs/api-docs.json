@@ -1,0 +1,163 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Item API",
+        "description": "API Sederhana",
+        "version": "1.0"
+    },
+    "paths": {
+        "/items": {
+            "get": {
+                "summary": "Menampilkan semua data item",
+                "operationId": "38f04083708efa13b19c689b47445d64",
+                "responses": {
+                    "200": {
+                        "description": "Menampilkan semua data"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Menambahkan data item baru",
+                "operationId": "5303a71efd2a2fd638dc3ce2bdda9997",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nama": {
+                                        "type": "string"
+                                    },
+                                    "harga": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Item berhasil ditambahkan"
+                    },
+                    "422": {
+                        "description": "Validasi Gagal"
+                    }
+                }
+            }
+        },
+        "/items/{id}": {
+            "get": {
+                "summary": "Read item berdasarkan ID",
+                "operationId": "3e662703a702b80e7f3dc6dd432f9128",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID Item",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data Item"
+                    },
+                    "404": {
+                        "description": "Item tidak ditemukan"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Mengupdate semua detail item",
+                "operationId": "4a2d683f0a5edace6de8e8d0d12c2ee9",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nama": {
+                                        "type": "string"
+                                    },
+                                    "harga": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Item berhasil diupdate full"
+                    },
+                    "404": {
+                        "description": "Item tidak ditemukan"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Menghapus item",
+                "operationId": "f7d8019e7a58101f594ab509931e3bb2",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Item berhasil dihapus"
+                    },
+                    "404": {
+                        "description": "Item tidak ditemukan"
+                    }
+                }
+            },
+            "patch": {
+                "summary": "Mengupdate sebagian detail item",
+                "operationId": "31a9621e92bfdcf796c7883e529c0b8c",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nama": {
+                                        "type": "string"
+                                    },
+                                    "harga": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Item berhasil diupdate sebagian"
+                    },
+                    "404": {
+                        "description": "Item tidak ditemukan"
+                    }
+                }
+            }
+        }
+    }
+}
